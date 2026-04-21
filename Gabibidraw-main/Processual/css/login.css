@@ -1,0 +1,97 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html, body{
+    width: 100%;
+    overflow-x: hidden;
+}
+
+body{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 128, 0, 0.293);
+    font-family: Arial, Helvetica, sans-serif, "Segoe UI Emoji", "Apple Color Emoji", "Noto Color Emoji";
+    padding: 16px;
+}
+
+h1{
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 42px;
+}
+
+.login{
+    background: white;
+    padding: 24px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    width: 100%;
+    max-width: 420px;
+}
+
+.login div{
+    margin-bottom: 16px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+label{
+    font-size: 18px;
+    min-width: 24px;
+    font-family: Arial, Helvetica, sans-serif, "Segoe UI Emoji", "Apple Color Emoji", "Noto Color Emoji";
+}
+
+input{
+    width: 100%;
+    padding: 12px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+
+button{
+    width: 100%;
+    padding: 12px;
+    border-radius: 5px;
+    background: rgb(0, 148, 0);
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    text-align: center;
+    border: none;
+}
+
+button:hover{
+    background: rgb(0, 115, 0);
+}
+
+@media (max-width: 480px){
+    .login{
+        padding: 18px;
+        border-radius: 12px;
+    }
+
+    h1{
+        font-size: 34px;
+    }
+
+    label{
+        font-size: 18px;
+    }
+
+    input{
+        padding: 10px;
+        font-size: 15px;
+    }
+
+    button{
+        font-size: 15px;
+        padding: 11px;
+    }
+}
