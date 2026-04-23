@@ -10,6 +10,9 @@ html, body{
 }
 
 body{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
     background-color: rgba(0, 128, 0, 0.293);
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -17,15 +20,14 @@ body{
 .header{
     width: 100%;
     display: flex;
-    background-color: green;
     justify-content: space-between;
     align-items: center;
-    padding: 12px 20px;
+    background-color: green;
+    padding: 10px 20px;
 }
 
 .headerLINK{
-    all: unset;
-    cursor: pointer;
+    display: block;
 }
 
 .headerIMG{
@@ -33,77 +35,78 @@ body{
     width: 120px;
 }
 
-.header a:not(.headerLINK){
+.menu-topo{
+    display: flex;
+}
+
+.menu-topo a{
     background-color: rgb(0, 148, 0);
-    color: black;
+    color: white;
     text-decoration: none;
     padding: 8px 14px;
     border-radius: 5px;
+    transition: 0.3s;
 }
 
-.header a:not(.headerLINK):hover{
+.menu-topo a:hover{
     background-color: rgb(0, 115, 0);
 }
 
-section{
+.main-cadastro{
+    flex: 1;
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
-    gap: 24px;
-    padding: 30px 16px;
-}
-
-.card{
-    background-color: antiquewhite;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    padding: 16px;
-    width: 260px;
-    display: flex;
-    flex-direction: column;
     align-items: center;
-    text-align: center;
+    padding: 30px 20px;
+}
+
+.cadastro{
+    background: white;
+    padding: 25px;
     border-radius: 10px;
-    gap: 10px;
+    width: 400px;
+    max-width: 100%;
 }
 
-.card img{
-    width: 100%;
-    height: auto;
-    display: block;
-    border-radius: 8px;
-}
-
-.card h1{
-    font-size: 20px;
-}
-
-.card p{
-    font-size: 14px;
-}
-
-.card h3{
-    margin-top: auto;
-}
-
-.card a{
-    width: 100%;
+h1{
     text-align: center;
-    margin-top: 10px;
-    background-color: green;
-    color: white;
-    padding: 8px;
-    border-radius: 5px;
-    text-decoration: none;
+    margin-bottom: 20px;
 }
 
-.card a:hover{
-    background-color: rgb(0, 115, 0);
+.cadastro div{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 12px;
+}
+
+input{
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+button{
+    width: 100%;
+    padding: 12px;
+    background: green;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+button:hover{
+    background: rgb(0, 115, 0);
 }
 
 .rodape{
+    width: 100%;
     background-color: #e9f7ef;
-    padding: 25px;
-    margin-top: 40px;
+    color: #033d1f;
+    padding: 25px 20px;
 }
 
 .rodape-container{
@@ -117,29 +120,34 @@ section{
     min-width: 200px;
 }
 
+.rodape-col h3{
+    margin-bottom: 10px;
+}
+
+.rodape-col p{
+    margin-bottom: 6px;
+}
+
 .card-rodape{
     display: block;
     background-color: #d4f5df;
+    color: #033d1f;
     padding: 10px;
     border-radius: 8px;
     margin-bottom: 8px;
     text-decoration: none;
-    color: black;
+    transition: 0.3s;
+    border: 1px solid #b5e3c3;
+}
+
+.card-rodape:hover{
+    background-color: #bdf0ce;
+    transform: scale(1.03);
 }
 
 .rodape-bottom{
     text-align: center;
     margin-top: 20px;
     font-size: 13px;
-}
-
-@media (max-width: 768px){
-    .card{
-        width: 90%;
-    }
-
-    .rodape-container{
-        flex-direction: column;
-        text-align: center;
-    }
+    color: #555;
 }

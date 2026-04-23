@@ -171,6 +171,56 @@ div img{
     margin-bottom: 40px;
     padding: 0 16px;
 }
+.rodape{
+    width: 100%;
+    background-color: #e9f7ef;
+    color: #033d1f;
+    padding: 25px 20px;
+    margin-top: auto;
+}
+
+.rodape-container{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.rodape-col{
+    min-width: 200px;
+}
+
+.rodape-col h3{
+    margin-bottom: 10px;
+}
+
+.rodape-col p{
+    margin-bottom: 6px;
+}
+
+.card-rodape{
+    display: block;
+    background-color: #d4f5df;
+    color: #033d1f;
+    padding: 10px;
+    border-radius: 8px;
+    margin-bottom: 8px;
+    text-decoration: none;
+    transition: 0.3s;
+    border: 1px solid #b5e3c3;
+}
+
+.card-rodape:hover{
+    background-color: #bdf0ce;
+    transform: scale(1.03);
+}
+
+.rodape-bottom{
+    text-align: center;
+    margin-top: 20px;
+    font-size: 13px;
+    color: #555;
+}
 
 @keyframes wave{
     0%   { background-position: 0%; }

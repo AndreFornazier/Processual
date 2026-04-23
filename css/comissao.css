@@ -96,16 +96,6 @@ header a:hover,
     flex: 1;
     text-align: center;
     font-size: 20px;
-    overflow-wrap: break-word;
-}
-
-.comissaoTXT p,
-.comissaoTXT h1,
-.comissaoTXT h2,
-.comissaoTXT h3,
-.comissaoTXT h4{
-    overflow-wrap: break-word;
-    word-wrap: break-word;
 }
 
 .comissaoIMG{
@@ -114,8 +104,6 @@ header a:hover,
 
 .comissaoIMG img{
     width: 100%;
-    height: auto;
-    display: block;
     border-radius: 16px;
     animation: balancarCARD 1.8s infinite ease-in-out;
 }
@@ -132,7 +120,6 @@ h2{
     margin-bottom: 30px;
     background: linear-gradient(90deg, green, lime, green);
     background-size: 200%;
-    background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     animation: wave 3s infinite linear;
@@ -141,6 +128,44 @@ h2{
 @keyframes wave{
     0%   { background-position: 0%; }
     100% { background-position: 200%; }
+}
+
+.rodape{
+    width: 100%;
+    background-color: #e9f7ef;
+    padding: 25px 20px;
+    margin-top: 40px;
+}
+
+.rodape-container{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.rodape-col{
+    min-width: 200px;
+}
+
+.card-rodape{
+    display: block;
+    background-color: #d4f5df;
+    padding: 10px;
+    border-radius: 8px;
+    margin-bottom: 8px;
+    text-decoration: none;
+    color: black;
+}
+
+.card-rodape:hover{
+    background-color: #bdf0ce;
+}
+
+.rodape-bottom{
+    text-align: center;
+    margin-top: 20px;
+    font-size: 13px;
 }
 
 @media (max-width: 768px){
@@ -163,35 +188,13 @@ h2{
         font-size: 17px;
     }
 
-    a,
-    header a,
-    .header a{
+    a{
         font-size: 14px;
         padding: 8px 12px;
     }
 
-    h2{
-        margin-bottom: 18px;
-    }
-}
-
-@media (max-width: 480px){
-    .comissaoTXT{
-        font-size: 15px;
-    }
-
-    .header{
-        flex-wrap: nowrap;
-    }
-
-    .headerIMG{
-        width: 85px;
-    }
-
-    a,
-    header a,
-    .header a{
-        font-size: 13px;
-        padding: 8px 10px;
+    .rodape-container{
+        flex-direction: column;
+        text-align: center;
     }
 }
