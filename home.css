@@ -88,6 +88,11 @@ section{
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
     animation: balancarCARD 1.5s infinite ease-in-out;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 220px;
 }
 
 .card:hover{
@@ -100,6 +105,16 @@ section{
 .card p{
     overflow-wrap: break-word;
     word-wrap: break-word;
+}
+
+.card p{
+    margin: 12px 0 18px;
+    line-height: 1.5;
+}
+
+.card a{
+    margin-top: auto;
+    align-self: center;
 }
 
 div img{
@@ -199,7 +214,7 @@ div img{
         width: calc(50% - 12px);
         min-width: 150px;
         padding: 16px;
-        animation: none;
+        animation: balancarCARD 2s infinite ease-in-out;
     }
 
     .introducao{

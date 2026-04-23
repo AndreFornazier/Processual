@@ -92,10 +92,7 @@ section{
     display: flex;
     flex-direction: column;
     border-radius: 10px;
-}
-
-.card div:last-child{
-    margin-top: auto;
+    gap: 12px;
 }
 
 .cardIMG{
@@ -118,10 +115,26 @@ section{
 
 .card h1,
 .card h2,
-.card h3,
+.card h3{
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    line-height: 1.3;
+    margin-bottom: 6px;
+}
+
 .card p{
     overflow-wrap: break-word;
     word-wrap: break-word;
+    font-size: 15px;
+    line-height: 1.6;
+    margin: 8px 0;
+    color: #222;
+}
+
+.card a,
+.card button{
+    margin-top: 10px;
+    align-self: center;
 }
 
 @keyframes balancar {
